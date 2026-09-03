@@ -1,0 +1,39 @@
+{
+  "name": "genpark-shopper-memory-preference-profile-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Persistent shopper memory, sizing matrix, brand affinities, and aesthetic preference graph for personalized shopping.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "shopping-agent",
+  "tags": [
+    "memory-personalization",
+    "shopper-profile",
+    "preference-graph",
+    "shopping-agent",
+    "anthropic-commerce"
+  ],
+  "inputs": {
+    "user_id": {
+      "type": "string"
+    },
+    "new_observed_signals": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "memory_profile_id": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "persisted_shopper_profile": {
+      "type": "object"
+    },
+    "personalized_affinity_vector_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
